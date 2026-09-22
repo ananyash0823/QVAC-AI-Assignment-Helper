@@ -1,0 +1,15 @@
+{
+  "name": "qvac-ai-assignment-helper",
+  "version": "1.0.0",
+  "description": "Local AI Assignment Helper powered by Tether QVAC SDK",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@qvac/sdk": "0.19.1",
+    "express": "^5.1.0"
+  },
+  "license": "MIT"
+}

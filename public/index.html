@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Assignment Helper — QVAC</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">TETHER QVAC • LOCAL AI</div>
+        <h1>AI Assignment Helper</h1>
+        <p>Get step-by-step help with assignments using AI running directly on your device.</p>
+      </div>
+      <div id="status" class="status">● Local model not loaded</div>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <div class="panel-title">
+          <h2>Assignment Question</h2>
+          <span id="counter">0 characters</span>
+        </div>
+
+        <label for="subject">Subject</label>
+        <select id="subject">
+          <option>Computer Science</option>
+          <option>Operating System</option>
+          <option>Programming</option>
+          <option>Data Structures</option>
+          <option>Artificial Intelligence</option>
+          <option>Mathematics</option>
+          <option>General</option>
+        </select>
+
+        <label for="question">Question</label>
+        <textarea id="question" placeholder="Paste your assignment question here...
+
+Example:
+Explain process scheduling in an operating system. Compare FCFS, SJF and Round Robin with examples."></textarea>
+
+        <button id="solve">Solve with Local AI</button>
+
+        <div class="privacy">
+          🔒 <strong>Private by design:</strong> the question is processed by QVAC locally.
+          No cloud AI API key is required.
+        </div>
+      </section>
+
+      <section class="panel answer-panel">
+        <div class="panel-title">
+          <h2>Generated Solution</h2>
+          <button id="clear" class="secondary">Clear</button>
+        </div>
+
+        <div id="answer" class="answer">
+          <div class="empty">
+            <div class="icon">✦</div>
+            <h3>Your answer will appear here</h3>
+            <p>Enter an assignment question and run the local QVAC model.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>QVAC SDK 0.19.1</span>
+      <span>loadModel() + completion()</span>
+      <span>On-device inference</span>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
