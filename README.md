@@ -109,3 +109,7 @@ Make sure Node.js is at least 22.17 and that `qvac doctor` passes the required h
 This project includes `qvac.config.json` with a 120-second worker startup timeout and enables QVAC logs. The app also forces the LLM to CPU mode to avoid unsupported GPU execution.
 
 If the worker still exits, copy the complete PowerShell output from `npm start` and the `qvac doctor` report when asking for help. The SDK attaches the worker exit code and stderr tail to startup failures.
+
+## Bounty Submission
+
+This project demonstrates local AI inference using Tether QVAC SDK 0.19.1 with loadModel() and completion().
